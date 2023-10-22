@@ -151,13 +151,36 @@ h4{
                 border-radius: 5px; /* Borda arredondada */
                 cursor: pointer; /* Transforme o cursor em uma mão ao passar sobre o botão */
             }
-     
+
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Cor de fundo preta */
+            color: #fff; /* Cor do texto branca */
+            overflow: hidden; /* Esconde o conteúdo fora da faixa preta */
+        }
+
+        .animated-text {
+            position: absolute;
+            font-size: 24px;
+            animation: slide 5s linear infinite; /* Definir a animação "slide" */
+        }
+
+        @keyframes slide {
+            0% {
+                left: 100%; /* Começa fora da tela à direita */
+            }
+            100% {
+                left: -100%; /* Termina fora da tela à esquerda */
+            }
+        }
+
+            
     </style>
     
 </head>
 <body>
  
-    
+  
    
     <header>
       
@@ -168,7 +191,9 @@ h4{
             <img class="center-image" src="logo.png" alt="Imagem no Centro">
 <button class="my-button">   <a href="confira.html">   <span>ACESSE AQUI<p>NOSSO<p>AMBIENTE DO RESTAURANTE</p></span></a></button>
       
-       
+           <div class="animated-text">
+        ESTACIONAMENTO GRATUIDO PARA CLIENTES!
+    </div>
     
 <h4>CARDÁPIO DIGITAL</h4>
   </center>
