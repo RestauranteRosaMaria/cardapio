@@ -190,7 +190,35 @@ h4{
             height: auto;
         }
 
-        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f3f3; /* Cor de fundo da página */
+            text-align: center;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gallery img {
+            max-width: 50%;
+            height: auto;
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+        }
+
+        h2{
+            color: aliceblue;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
     </style>
     
 </head>
@@ -218,27 +246,23 @@ h4{
     
   
     <body>
-        <div class="section">
-            <h2>Seção 1</h2>
-            <img src="BEBIDAS.jpg" alt="Imagem 1">
+          <h2>ESTACIONAMENTO AMPLO</h2>
+        <div class="gallery">
+            <img src="um.jpeg" alt="um 1">
+            <img src="dois.jpeg" alt="dois 2">
+            <img src="tres.jpeg" alt="tres3">
+            <img src="quatro.jpeg" alt="quatro 4">
+            <img src="cinco.jpeg" alt="cinco 5">
+            <!-- Adicione mais imagens conforme necessário -->
         </div>
-    
-        <div class="section">
-            <h2>Seção 2</h2>
-            <img src="BEBIDAS.jpg" alt="Imagem 2">
-        </div>
-    
-        <div class="section">
-            <h2>Seção 3</h2>
-            <img src="BEBIDAS.jpg" alt="Imagem 3">
-        </div>
-        <div class="section">
-            <h2>Seção 4</h2>
-            <img src="BEBIDAS.jpg" alt="Imagem 3">
-        </div>
-        <div class="section">
-            <h2>Seção 5</h2>
-            <img src="BEBIDAS.jpg" alt="Imagem 3">
+        <h2>RESTAURANTE</h2>
+        <div class="gallery">
+            <img src="doze.jpeg" alt="doze 12">
+            <img src="sete.jpeg" alt="sete 7">
+            <img src="oito.jpeg" alt="otio 8">
+            <img src="nove.jpeg" alt="nove 9">
+            <img src="dez.jpeg" alt="dez 10">
+            <!-- Adicione mais imagens conforme necessário -->
         </div>
  <footer>
     <h5>Acesse Nossas Redes Sociais<p>E faça seu pedido</p></h5>
