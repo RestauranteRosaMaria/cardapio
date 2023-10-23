@@ -176,7 +176,12 @@ h4{
             audio {
             display: none;
         }
-
+ .relogio {
+            font-size: 32px;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            border: #ccc;
+        }
     
     </style>
     <script>
@@ -186,9 +191,29 @@ h4{
             novoLocal.appendChild(body);
         }
     </script>
+         <script>
+        function atualizarRelogio() {
+            const relogio = new Date();
+            const hora = relogio.getHours();
+            const minuto = relogio.getMinutes();
+            const segundo = relogio.getSeconds();
+            const dia = relogio.getDate();
+            const mes = relogio.getMonth() + 1; // Lembrando que o mês começa em 0 (janeiro) no JavaScript
+            const ano = relogio.getFullYear();
+
+            const dataFormatada = `${dia}/${mes}/${ano}`;
+            const horaFormatada = `${hora.toString().padStart(2, '0')}:${minuto.toString().padStart(2, '0')}:${segundo.toString().padStart(2, '0')}`;
+
+            const relogioElement = document.getElementById("relogio");
+            relogioElement.textContent = `${dataFormatada} ${horaFormatada}`;
+        }
+
+        setInterval(atualizarRelogio, 1000); // Atualiza a cada segundo
+        atualizarRelogio(); // Atualiza imediatamente ao carregar a página
+    </script>
 </head>
 <body>
-
+ <div class="relogio" id="relogio">Carregando...</div>
  
     <header>
       
