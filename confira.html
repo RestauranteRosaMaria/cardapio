@@ -224,7 +224,13 @@ h4{
             border: 2px solid #f1f1f1; /* Largura e estilo da borda */
             border-radius: 15%; /* Arredondamento das bordas */
     </style>
-    
+     <script>
+        function moverConteudo() {
+            const body = document.querySelector("body");
+            const novoLocal = document.getElementById("novoLocal");
+            novoLocal.appendChild(body);
+        }
+    </script>
 </head>
 <body>
  
