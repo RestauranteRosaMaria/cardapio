@@ -181,8 +181,14 @@ h4{
     
 </head>
 <body>
-
-
+<div id="novoLocal"></div>
+ <script>
+        function moverConteudo() {
+            const body = document.querySelector("body");
+            const novoLocal = document.getElementById("novoLocal");
+            novoLocal.appendChild(body);
+        }
+    </script>
     <header>
       
        
